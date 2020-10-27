@@ -22,7 +22,9 @@ def main():
     texteClair = input("Quel est le texte ? ").upper()
     decalage = int(input("quel est le décalage ?"))
     texteCode = caesar(texteClair, decalage)
+    texteCodeInverse = caesar(texteClair, -decalage)
     print(f"Texte codé : {texteCode}")
+    print(f"Texte inversé : {texteCodeInverse}")
 
 if __name__ == "__main__":
     main()
